@@ -36,7 +36,7 @@ nuitka main.py --onefile
 
 After quite some time your executable will be in the same dir as python file.
 
-<br>
+<hr>
 
 Screenshots:
 
