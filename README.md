@@ -19,11 +19,13 @@ https://colab.research.google.com/github/vluz/PythonKivy2AndroidAPK/blob/main/Py
 
 *Follow intructions in the notebook*
 
+To answer (y/n) prompts, click the line, enter `y` and press Enter
+
 When required, copy your app to the collab workspace.
 
 Remember to edit `buildozer.spec` to match your app details.
 
-At the end download your APK from the collab workspace.
+At the end download your APK from the `bin` dir in the collab workspace.
 
 <hr>
 
@@ -35,3 +37,10 @@ nuitka main.py --onefile
 After quite some time your executable will be in the same dir as python file.
 
 <br>
+
+Screenshots:
+
+![Image1](screenshot/screenshot_Android.jpg?raw=true "Image 1")
+
+![Image2](screenshot/screenshot_Win.jpg?raw=true "Image 2")
+
