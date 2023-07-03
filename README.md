@@ -6,6 +6,10 @@ compiling a Kivy Python app into a executable APK in Android.
 Normallu you'd have a Linux machine to be able to compile     
 but one is not needed, instead a Google collab is used.    
 
+The example `main.py` is done from Kivy documentation.     
+It's a very basic calculator that is still useful.     
+Dark Material theme.     
+
 <hr>
 
 Rename your app as `main.py`
