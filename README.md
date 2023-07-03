@@ -40,7 +40,8 @@ After quite some time your executable will be in the same dir as python file.
 
 Screenshots:
 
-![Image1](screenshot/screenshot_Android.jpg?raw=true "Image 1")
+<img src="screenshot/screenshot_Android.jpg" width=25% height=25%>
 
-![Image2](screenshot/screenshot_Win.jpg?raw=true "Image 2")
+<img src="screenshot/screenshot_Win.jpg" width=50% height=50%>
 
+<br>
