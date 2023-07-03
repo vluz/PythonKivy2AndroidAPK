@@ -16,8 +16,8 @@ class MainApp(App):
         Window.clearcolor = (0.071, 0.071, 0.071, 1)
         self.title = 'Calculator'
         main_layout = BoxLayout(orientation="vertical", padding=[10, 10, 10, 10], spacing=10)
-        self.solution = TextInput(foreground_color=[0.267, 0.541, 1, 1], background_color=[0, 0, 0, 1], border=(0, 0, 0, 0),
-                                  focus=False, multiline=False, readonly=True, halign="right", font_size=55)
+        self.solution = TextInput(foreground_color=[0.267, 0.541, 1, 1], background_color=[0, 0, 0, 1], 
+                                  border=(0, 0, 0, 0), multiline=False, readonly=True, halign="right", font_size=55)
         self.solution.bind(on_double_tap=self.on_double_tap)
         main_layout.add_widget(self.solution)
         buttons = [["7", "8", "9", "÷"],
@@ -27,11 +27,13 @@ class MainApp(App):
         for row in buttons:
             h_layout = BoxLayout(spacing=10)
             for label in row:
-                button = Button(text=label, pos_hint={"center_x": 0.5, "center_y": 0.5}, font_size=55, color=[0.502, 0.847, 1, 1], background_color=[0.38, 0.38, 0.38, 1])
+                button = Button(text=label, pos_hint={"center_x": 0.5, "center_y": 0.5}, font_size=55, 
+                                color=[0.502, 0.847, 1, 1], background_color=[0.38, 0.38, 0.38, 1])
                 button.bind(on_press=self.on_button_press)
                 h_layout.add_widget(button)
             main_layout.add_widget(h_layout)
-        equals_button = Button(text="=", pos_hint={"center_x": 0.5, "center_y": 0.5}, font_size=55, color=[0.502, 0.847, 1, 1], background_color=[0.38, 0.38, 0.38, 1])
+        equals_button = Button(text="=", pos_hint={"center_x": 0.5, "center_y": 0.5}, font_size=55, 
+                               color=[0.502, 0.847, 1, 1], background_color=[0.38, 0.38, 0.38, 1])
         equals_button.bind(on_press=self.on_solution)
         main_layout.add_widget(equals_button)
         return main_layout
