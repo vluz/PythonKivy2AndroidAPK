@@ -14,7 +14,7 @@ Dark Material theme baked in.
 
 Rename your app as `main.py`
 
-Open Jupyter notebook named `PythonKivy2AndroidAPK.ipynb` in collab
+Open Jupyter notebook named `PythonKivy2AndroidAPK.ipynb` in collab:     
 https://colab.research.google.com/github/vluz/PythonKivy2AndroidAPK/blob/main/PythonKivy2AndroidAPK.ipynb
 
 *Follow intructions in the notebook*
