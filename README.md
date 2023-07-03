@@ -8,7 +8,7 @@ but one is not needed, instead a Google collab is used.
 
 The example `main.py` is done from Kivy documentation.     
 It's a very basic calculator that is still useful.     
-Dark Material theme.     
+Dark Material theme baked in.     
 
 <hr>
 
