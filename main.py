@@ -23,7 +23,7 @@ class MainApp(App):
         main_layout.add_widget(self.solution)
         buttons = [["7", "8", "9", "÷"],
                    ["4", "5", "6", "×"],
-                   ["1", "2", "3", "−"],
+                   ["1", "2", "3", "-"],
                    [".", "0", "C", "+"],]
         for row in buttons:
             h_layout = BoxLayout(spacing=10)
@@ -65,11 +65,10 @@ class MainApp(App):
     def on_solution(self, instance):
         text = self.solution.text
         if text:
-            exchange = {"÷": "/", "×": "*", "−": "-", "+": "+"}
+            exchange = {"÷": "/", "×": "*", "+": "+", "-": "-"}
             for char in exchange.keys():
                 text = text.replace(char, exchange[char])
-            evalsafe = re.sub(r'[^0-9./*-+]', '', text)
-            print(evalsafe)
+            evalsafe = re.sub(r'[^0-9./*+-]', '', text)
             try:
                 solution = str(eval(evalsafe))
             except:
@@ -80,4 +79,3 @@ class MainApp(App):
 if __name__ == "__main__":
     app = MainApp()
     app.run()
-    
