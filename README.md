@@ -3,7 +3,7 @@
 
 Here you can find a set of resources aimed at helping       
 compiling a Kivy Python app into a executable APK in Android.     
-Normallu you'd have a Linux machine to be able to compile     
+Normally you'd have a Linux machine to be able to compile     
 but one is not needed, instead a Google collab is used.    
 
 The example `main.py` is done from Kivy documentation.     
